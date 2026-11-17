@@ -19,3 +19,21 @@ workspace/log_ngp.txt
 models/
 *.log
 dist
+
+# Local secrets and Python environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Downloaded weights and archives
+*.pth
+*.pt
+*.onnx
+*.safetensors
+*.tar.gz
+*.zip
+
+# Local outputs
+reports/week3/environment.txt
