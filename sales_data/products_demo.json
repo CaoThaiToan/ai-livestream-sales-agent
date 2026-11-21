@@ -1,0 +1,26 @@
+[
+  {
+    "id": "DEMO001",
+    "name": "Chuột không dây mẫu A",
+    "price_vnd": 250000,
+    "stock": 12,
+    "features": ["Kết nối Bluetooth", "Thiết kế nhỏ gọn"],
+    "data_type": "simulated"
+  },
+  {
+    "id": "DEMO002",
+    "name": "Bàn phím mẫu B",
+    "price_vnd": 450000,
+    "stock": 5,
+    "features": ["Kết nối USB", "Có bàn phím số"],
+    "data_type": "simulated"
+  },
+  {
+    "id": "DEMO003",
+    "name": "Tai nghe mẫu C",
+    "price_vnd": 350000,
+    "stock": 0,
+    "features": ["Có micro", "Kết nối jack 3.5 mm"],
+    "data_type": "simulated"
+  }
+]
