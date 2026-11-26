@@ -1,0 +1,317 @@
+[
+  {
+    "id": "SP001",
+    "name": "Chuột không dây Silent Logitech M220",
+    "category": "Chuột máy tính",
+    "description": "Chuột không dây giảm 90% tiếng ồn click, thiết kế đối xứng nhỏ gọn, thời lượng pin lên đến 18 tháng.",
+    "price_vnd": 299000,
+    "stock": 15,
+    "features": [
+      "Kết nối không dây 2.4GHz qua USB Receiver",
+      "Click êm Silent Touch không ồn",
+      "Pin AA dùng tới 18 tháng",
+      "Độ phân giải 1000 DPI"
+    ],
+    "suitable_for": [
+      "Văn phòng",
+      "Học sinh sinh viên",
+      "Làm việc ban đêm hoặc thư viện"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP002",
+    "name": "Chuột chơi game có dây Razer DeathAdder Essential",
+    "category": "Chuột máy tính",
+    "description": "Chuột gaming thiết kế công thái học kinh điển, cảm biến quang học 6400 DPI, độ bền 10 triệu lần bấm.",
+    "price_vnd": 450000,
+    "stock": 8,
+    "features": [
+      "Cảm biến quang học 6400 DPI",
+      "5 nút Hyperesponse lập trình được",
+      "Đèn LED xanh lá Razer",
+      "Dây cáp bọc dù dài 2.1m"
+    ],
+    "suitable_for": [
+      "Chơi game FPS/MOBA",
+      "Thiết kế đồ họa",
+      "Người thuận tay phải"
+    ],
+    "warranty_months": 24,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP003",
+    "name": "Chuột công thái học không dây Delux M618 Mini",
+    "category": "Chuột máy tính",
+    "description": "Chuột đứng công thái học giảm căng cơ cổ tay, hỗ trợ Bluetooth và USB 2.4G, pin sạc Type-C tích hợp.",
+    "price_vnd": 550000,
+    "stock": 0,
+    "features": [
+      "Góc nghiêng 57 độ công thái học",
+      "Kết nối Bluetooth 5.0 và 2.4G Wireless",
+      "Pin sạc Li-ion cổng Type-C",
+      "4 mức DPI 800/1200/1600/2400"
+    ],
+    "suitable_for": [
+      "Dân văn phòng gõ máy lâu",
+      "Người bị đau mỏi cổ tay RSI",
+      "Lập trình viên"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP004",
+    "name": "Bàn phím cơ DareU EK87",
+    "category": "Bàn phím",
+    "description": "Bàn phím cơ nhỏ gọn layout Tenkeyless 87 phím, switch D-Switch độc quyền bấm mượt, LED Rainbow nhiều chế độ.",
+    "price_vnd": 590000,
+    "stock": 20,
+    "features": [
+      "Layout TKL 87 phím gọn gàng",
+      "Switch DareU Red/Brown/Blue độ bền 50 triệu lần",
+      "LED Rainbow phân vùng",
+      "Dây cáp USB gắn liền"
+    ],
+    "suitable_for": [
+      "Chơi game",
+      "Gõ văn bản hàng ngày",
+      "Góc làm việc diện tích nhỏ"
+    ],
+    "warranty_months": 24,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP005",
+    "name": "Bàn phím không dây đa thiết bị Logitech K380",
+    "category": "Bàn phím",
+    "description": "Bàn phím Bluetooth siêu mỏng nhẹ, hỗ trợ kết nối và chuyển đổi nhanh giữa 3 thiết bị cùng lúc.",
+    "price_vnd": 650000,
+    "stock": 12,
+    "features": [
+      "Kết nối Bluetooth 3.0 với nút Easy-Switch 3 thiết bị",
+      "Phím tròn êm ái, cách âm tốt",
+      "Thời lượng pin 2 năm (2 pin AAA)",
+      "Tương thích Windows, macOS, iOS, Android"
+    ],
+    "suitable_for": [
+      "Người di chuyển nhiều",
+      "Dùng cùng iPad/Laptop/Điện thoại",
+      "Văn phòng yên tĩnh"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP006",
+    "name": "Bàn phím cơ không dây FL-Esports GP75",
+    "category": "Bàn phím",
+    "description": "Bàn phím cơ custom cao cấp layout 75 phím kèm núm xoay đa năng, mạch xuôi hotswap, đệm tiêu âm đầy đủ.",
+    "price_vnd": 1450000,
+    "stock": 5,
+    "features": [
+      "3 chế độ kết nối: Type-C, Bluetooth 5.0, 2.4GHz",
+      "Mạch xuôi RGB có hotswap 5 pin",
+      "Keycap PBT Double-shot Cherry profile",
+      "Lót foam Poron và switch pad tiêu âm cao cấp"
+    ],
+    "suitable_for": [
+      "Người đam mê phím cơ",
+      "Chơi game cao cấp",
+      "Gõ code chuyên nghiệp"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP007",
+    "name": "Tai nghe chụp tai gaming có dây Havit H2002D",
+    "category": "Tai nghe",
+    "description": "Tai nghe gaming over-ear khung kim loại chắc chắn, màng loa 53mm âm trầm mạnh mẽ, mic có thể tháo rời.",
+    "price_vnd": 490000,
+    "stock": 14,
+    "features": [
+      "Màng loa 53mm tái tạo âm thanh vòm",
+      "Micro đàm thoại khử ồn tháo rời được",
+      "Đệm tai bọc da nhân tạo êm ái",
+      "Jack cắm 3.5mm kèm cáp chia PC"
+    ],
+    "suitable_for": [
+      "Chơi game bắn súng PUBG/CSGO",
+      "Học trực tuyến",
+      "Đàm thoại Discord/Zoom"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP008",
+    "name": "Tai nghe không dây chống ồn Baseus Bowie M2+",
+    "category": "Tai nghe",
+    "description": "Tai nghe True Wireless công nghệ chống ồn chủ động ANC -42dB, độ trễ thấp 0.038s cho game thủ di động.",
+    "price_vnd": 590000,
+    "stock": 16,
+    "features": [
+      "Chống ồn chủ động ANC lai -42dB",
+      "Bluetooth 5.2 kết nối kép ổn định",
+      "Thời lượng pin 30 giờ kèm dock sạc",
+      "Ứng dụng Baseus tùy chỉnh EQ định vị"
+    ],
+    "suitable_for": [
+      "Đi lại ngoài đường",
+      "Nghe nhạc di động",
+      "Học tập và làm việc nơi ồn ào"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP009",
+    "name": "Tai nghe chụp tai chống ồn Sony WH-CH720N",
+    "category": "Tai nghe",
+    "description": "Tai nghe chống ồn không dây trọng lượng nhẹ nhất của Sony, sử dụng chip V1 cao cấp và pin đến 35 giờ.",
+    "price_vnd": 2290000,
+    "stock": 4,
+    "features": [
+      "Chip tích hợp V1 chống ồn tự động thông minh",
+      "Trọng lượng siêu nhẹ chỉ 192g",
+      "Pin lên tới 35 giờ khi bật chống ồn",
+      "Hỗ trợ sạc nhanh 3 phút dùng 60 phút"
+    ],
+    "suitable_for": [
+      "Người nghe nhạc đòi hỏi chất âm tốt",
+      "Làm việc văn phòng mở",
+      "Đi máy bay hoặc du lịch xa"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP010",
+    "name": "Webcam Full HD 1080P Rapoo C260",
+    "category": "Webcam",
+    "description": "Webcam gắn màn hình chuẩn Full HD 1080P lấy nét tự động, góc nhìn rộng 80 độ, micro kép khử tiếng ồn.",
+    "price_vnd": 350000,
+    "stock": 18,
+    "features": [
+      "Độ phân giải 1080P@30fps sắc nét",
+      "Góc quan sát rộng 80 độ",
+      "Micro đa hướng tích hợp lọc tạp âm",
+      "Cắm là chạy qua cổng USB không cần cài driver"
+    ],
+    "suitable_for": [
+      "Học trực tuyến",
+      "Họp Zoom/Google Meet",
+      "Livestream bán hàng cơ bản"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP011",
+    "name": "Giá đỡ laptop tản nhiệt hợp kim nhôm Orico LST-2A",
+    "category": "Giá đỡ & Phụ kiện bàn làm việc",
+    "description": "Giá đỡ laptop nhôm nguyên khối có thể gập gọn, điều chỉnh 6 cấp độ cao hỗ trợ công thái học chống gù lưng.",
+    "price_vnd": 180000,
+    "stock": 25,
+    "features": [
+      "Hợp kim nhôm dày 4mm cứng cáp",
+      "Chỉnh 6 mức độ cao từ 15 đến 45 độ",
+      "Đệm silicon chống trượt và chống trầy xước máy",
+      "Tương thích laptop và tablet 10 đến 15.6 inch"
+    ],
+    "suitable_for": [
+      "Học sinh sinh viên",
+      "Người ngồi làm việc máy tính lâu",
+      "Tăng hiệu quả tản nhiệt laptop"
+    ],
+    "warranty_months": 6,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP012",
+    "name": "Hub chuyển đổi USB-C 6 trong 1 Ugreen 70411",
+    "category": "Hub & Cáp chuyển đổi",
+    "description": "Cổng chuyển đổi Type-C đa năng mở rộng HDMI 4K, 3 cổng USB 3.0 và khe đọc thẻ nhớ SD/TF vỏ kim loại tản nhiệt.",
+    "price_vnd": 450000,
+    "stock": 0,
+    "features": [
+      "Cổng HDMI xuất hình 4K@30Hz",
+      "3 cổng USB 3.0 tốc độ truyền 5Gbps",
+      "Khe cắm thẻ nhớ SD và TF đọc đồng thời",
+      "Vỏ hợp kim nhôm xám tản nhiệt tốt"
+    ],
+    "suitable_for": [
+      "Người dùng MacBook và Ultrabook ít cổng",
+      "Thuyết trình văn phòng",
+      "Nhiếp ảnh gia chép ảnh thẻ nhớ"
+    ],
+    "warranty_months": 18,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP013",
+    "name": "Hub chuyển đổi USB-C 4 cổng USB 3.0 Baseus Metal Gleam",
+    "category": "Hub & Cáp chuyển đổi",
+    "description": "Hub chia cổng USB-C sang 4 cổng USB 3.0 tốc độ cao, hỗ trợ cắm chuột, phím, USB và ổ cứng ngoài.",
+    "price_vnd": 280000,
+    "stock": 16,
+    "features": [
+      "Mở rộng 4 cổng USB 3.0 tốc độ 5Gbps",
+      "Đèn LED báo trạng thái hoạt động",
+      "Chip điều khiển độc lập bảo vệ quá dòng",
+      "Vỏ nhôm Anodized chống bám vân tay"
+    ],
+    "suitable_for": [
+      "Mở rộng cổng cắm chuột, phím cho laptop",
+      "Sao chép dữ liệu USB",
+      "Dùng hằng ngày văn phòng"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP014",
+    "name": "Lót chuột cỡ lớn Gaming Speed 80x30cm",
+    "category": "Giá đỡ & Phụ kiện bàn làm việc",
+    "description": "Bàn di chuột khổ lớn bao phủ cả phím và chuột, bo viền chỉ đôi chắc chắn, đế cao su thiên nhiên bám bàn.",
+    "price_vnd": 89000,
+    "stock": 50,
+    "features": [
+      "Kích thước lớn 800 x 300 x 3 mm",
+      "Bề mặt vải dệt mịn tối ưu tốc độ di chuột",
+      "Bo viền chỉ dày chống bong mép",
+      "Đế cao su thiên nhiên chống trượt"
+    ],
+    "suitable_for": [
+      "Trang trí bàn làm việc",
+      "Game thủ cần không gian di chuột rộng",
+      "Học tập tại nhà"
+    ],
+    "warranty_months": 3,
+    "data_type": "simulated"
+  },
+  {
+    "id": "SP015",
+    "name": "Đèn treo màn hình bảo vệ mắt Baseus i-wok 3",
+    "category": "Giá đỡ & Phụ kiện bàn làm việc",
+    "description": "Đèn kẹp màn hình máy tính công nghệ chiếu sáng bất đối xứng không chói màn hình, cảm ứng chỉnh nhiệt độ màu và độ sáng.",
+    "price_vnd": 490000,
+    "stock": 7,
+    "features": [
+      "Thiết kế quang học bất đối xứng chống phản chiếu lóa mắt",
+      "Chỉ số hoàn màu cao Ra95 trung thực",
+      "Điều khiển cảm ứng chỉnh nhiệt độ màu 2700K - 6500K",
+      "Cấp nguồn qua cổng USB Type-C 5V tiện lợi"
+    ],
+    "suitable_for": [
+      "Người làm việc máy tính ban đêm",
+      "Hạn chế mỏi mắt cho lập trình viên và designer",
+      "Góc học tập thiếu sáng"
+    ],
+    "warranty_months": 12,
+    "data_type": "simulated"
+  }
+]
