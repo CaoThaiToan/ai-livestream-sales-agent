@@ -4,6 +4,7 @@ Tuân thủ nghiêm ngặt Hợp đồng tích hợp (docs/integration_contract.
 """
 
 import json
+import logging
 import os
 import re
 import sys
@@ -24,6 +25,9 @@ except ImportError:
 
 from agent.catalog import default_catalog
 from agent.prompts import build_system_prompt, build_user_prompt
+from agent.query import select_products
+
+logger = logging.getLogger(__name__)
 
 # Danh sách status hợp lệ theo Hợp đồng tích hợp
 VALID_STATUSES = {"ok", "need_clarification", "no_data", "error"}
@@ -133,8 +137,12 @@ def answer_question(session_id: str, question: str) -> Dict[str, Any]:
 
         client = OpenAI(**client_kwargs)
 
-        # Chuẩn bị ngữ cảnh sản phẩm & chính sách
-        context = default_catalog.format_context_for_prompt()
+        # Tra cứu điều kiện trước khi Gemini diễn đạt câu trả lời.
+        products, lookup_instruction = select_products(default_catalog, user_q)
+        selected_ids = {product["id"] for product in products}
+        logger.info("Product lookup selected=%s", sorted(selected_ids))
+        context = default_catalog.format_context_for_prompt(products)
+        context += "\n\n=== KẾT QUẢ ĐỐI CHIẾU ĐIỀU KIỆN ===\n" + lookup_instruction
         system_prompt = build_system_prompt()
         user_prompt = build_user_prompt(user_q, context)
 
@@ -151,7 +159,10 @@ def answer_question(session_id: str, question: str) -> Dict[str, Any]:
 
         content = completion.choices[0].message.content or ""
         parsed = _extract_json(content)
-        return _validate_response(parsed)
+        response = _validate_response(parsed)
+        if not set(response["product_ids"]).issubset(selected_ids):
+            raise ValueError("Agent returned a product outside the lookup result")
+        return response
 
     except Exception as e:
         # Ghi log ra stderr để debug, nhưng đầu ra trả về người dùng / TTS vẫn tuân thủ schema bảo vệ

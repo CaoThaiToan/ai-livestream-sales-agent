@@ -160,28 +160,14 @@ class ProductCatalog:
         return [p for _, p in scored_products[:limit]]
 
     def format_context_for_prompt(self, relevant_products: Optional[List[Dict[str, Any]]] = None) -> str:
-        """
-        Định dạng danh sách sản phẩm và chính sách thành chuỗi tóm tắt gọn gàng
-        để nạp vào Context của Prompt mà không gây quá tải token.
-        """
+        """Giữ đủ dữ kiện của sản phẩm được chọn và chính sách cho câu trả lời."""
         products_to_format = relevant_products if relevant_products is not None else self.products
-
-        lines = ["=== DANH MỤC SẢN PHẨM HIỆN CÓ CỦA CỬA HÀNG ==="]
-        for p in products_to_format:
-            stock_status = f"Còn hàng ({p['stock']} cái)" if p["stock"] > 0 else "HẾT HÀNG (tạm ngưng nhận đơn)"
-            features_str = ", ".join(p["features"][:3])
-            lines.append(
-                f"- Mã: {p['id']} | Tên: {p['name']} | Giá: {p['price_vnd']:,} VNĐ | "
-                f"Tồn kho: {stock_status} | Bảo hành: {p['warranty_months']} tháng | "
-                f"Đặc điểm: {features_str}"
-            )
-
-        lines.append("\n=== CHÍNH SÁCH CỬA HÀNG TÓM TẮT ===")
-        # Lấy tóm tắt chính sách
-        policy_lines = [l for l in self.policy_text.splitlines() if l.strip().startswith("-") or l.strip().startswith("##")]
-        lines.append("\n".join(policy_lines[:15]))
-
-        return "\n".join(lines)
+        return (
+            "=== SẢN PHẨM ĐÃ TRA CỨU ===\n"
+            + json.dumps(products_to_format, ensure_ascii=False, indent=2)
+            + "\n\n=== CHÍNH SÁCH CỬA HÀNG ===\n"
+            + self.policy_text
+        )
 
 
 # Singleton instance tiện lợi khi import dùng ngay
