@@ -98,15 +98,23 @@ def answer_question(session_id: str, question: str) -> Dict[str, Any]:
     user_q = question.strip()
 
     # Cấu hình LLM từ biến môi trường
-    provider = os.getenv("LLM_PROVIDER", "openai").lower()
-    api_key = (
-        os.getenv("LLM_API_KEY")
-        or os.getenv("OPENAI_API_KEY")
-        or os.getenv("GROQ_API_KEY")
-        or os.getenv("DASHSCOPE_API_KEY")
-    )
-    model = os.getenv("LLM_MODEL", "gpt-4o-mini")
-    base_url = os.getenv("LLM_BASE_URL", None)
+    provider = (os.getenv("LLM_PROVIDER") or "openai").strip().lower()
+    if provider == "gemini":
+        api_key = os.getenv("GEMINI_API_KEY") or os.getenv("LLM_API_KEY")
+        default_model = "gemini-3.5-flash-lite"
+        default_base_url = "https://generativelanguage.googleapis.com/v1beta/openai/"
+    else:
+        api_key = (
+            os.getenv("LLM_API_KEY")
+            or os.getenv("OPENAI_API_KEY")
+            or os.getenv("GROQ_API_KEY")
+            or os.getenv("DASHSCOPE_API_KEY")
+        )
+        default_model = "gpt-4o-mini"
+        default_base_url = None
+
+    model = os.getenv("LLM_MODEL") or default_model
+    base_url = os.getenv("LLM_BASE_URL") or default_base_url
 
     # Nếu chưa cấu hình API Key: trả về thông báo lịch sự đúng chuẩn contract
     if not api_key:
